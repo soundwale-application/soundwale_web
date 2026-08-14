@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Soundwale — India's Sound & Audio Marketplace | Buy, Sell, Hire, List</title>
 <meta name="description" content="Soundwale is the marketplace built for India's sound and audio trade. Buy and sell equipment, hire verified DJs, engineers and studios, or list your business — all in one app.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="soundwale_logo.png" type="image/png">
 <meta property="og:image" content="soundwale_logo.png">
 <meta name="twitter:card" content="summary">
-<script>!function(){try{document.documentElement.dataset.theme=localStorage.getItem('soundwale-theme')||((matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light')}catch(e){}}()</script>
+<script>!function(){document.documentElement.classList.replace('no-js','js');try{document.documentElement.dataset.theme=localStorage.getItem('soundwale-theme')||((matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light')}catch(e){}}()</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -204,41 +206,13 @@
       <div class="section-head reveal">
         <span class="eyebrow">Inside the app</span>
         <h2>A closer look at the screens</h2>
-        <p>Placeholder frames shown below — swap in real product screenshots at 1170×2532px (see asset list).</p>
+        <p>Explore the marketplace, leads inbox, directory, and professional profile experience in the Soundwale app.</p>
       </div>
       <div class="screens reveal">
         <div class="screen-card"><div class="screen-frame"><div class="screen-frame__inner s1"><span>MARKETPLACE FEED</span></div></div><p>Browse listings near you</p></div>
         <div class="screen-card"><div class="screen-frame"><div class="screen-frame__inner s2"><span>LEADS INBOX</span></div></div><p>Real-time buyer enquiries</p></div>
         <div class="screen-card"><div class="screen-frame"><div class="screen-frame__inner s3"><span>DIRECTORY</span></div></div><p>Find verified professionals</p></div>
         <div class="screen-card"><div class="screen-frame"><div class="screen-frame__inner s4"><span>YOUR PROFILE</span></div></div><p>Showcase your portfolio</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TESTIMONIALS ============ -->
-  <section class="section--dark section">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">From the trade</span>
-        <h2>Sample of the voices we're collecting</h2>
-        <p>Placeholder quotes — replace with verified customer reviews before launch (see handoff notes).</p>
-      </div>
-      <div class="testimonials reveal">
-        <article class="testimonial">
-          <div class="testimonial__mark">"</div>
-          <p class="quote">Placeholder: describe how quickly a rental enquiry turned into a booking.</p>
-          <div class="testimonial__who"><span class="avatar">RC</span><div><b>Rental Company Owner</b><span>Ahmedabad, Gujarat</span></div></div>
-        </article>
-        <article class="testimonial">
-          <div class="testimonial__mark">"</div>
-          <p class="quote">Placeholder: describe finding consistent DJ bookings through the directory.</p>
-          <div class="testimonial__who"><span class="avatar">DJ</span><div><b>DJ Operator</b><span>Surat, Gujarat</span></div></div>
-        </article>
-        <article class="testimonial">
-          <div class="testimonial__mark">"</div>
-          <p class="quote">Placeholder: describe sourcing hard-to-find parts through a dealer listing.</p>
-          <div class="testimonial__who"><span class="avatar">SE</span><div><b>Sound Engineer</b><span>Rajkot, Gujarat</span></div></div>
-        </article>
       </div>
     </div>
   </section>
@@ -256,7 +230,7 @@
             <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.soundwale"><span>▸</span><span>Google Play<small>Get it on</small></span></a>
           </div>
         </div>
-        <div class="qr-block" aria-hidden="true">
+        <div class="qr-block" hidden aria-hidden="true">
           <div class="qr"></div>
           <span>Scan to download</span>
         </div>
@@ -300,8 +274,8 @@
         <h2>Talk to the Soundwale team</h2>
         <p>Questions about listing your business or partnering with us — reach out directly.</p>
       </div>
-      <div class="reveal" style="display:grid; grid-template-columns: 1fr 1fr; gap: var(--sp-6);">
-        <form class="js-contact-form" novalidate>
+      <div class="reveal contact-grid">
+        <form action="mailto:rudrasoundwale@gmail.com" method="post" enctype="text/plain">
           <div class="field">
             <label for="name">Your name</label>
             <input id="name" name="name" type="text" required>
@@ -315,14 +289,14 @@
             <label for="message">How can we help?</label>
             <textarea id="message" name="message" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn btn--primary btn--full">Send message</button>
-          <div class="form-success" style="margin-top:var(--sp-3);">Thanks — your message is in. We'll reply within one business day.</div>
+          <button type="submit" class="btn btn--primary btn--full">Email Soundwale</button>
+          <p class="form-status">Submitting opens your default email app. You can also email us directly below.</p>
         </form>
-        <div>
-          <p style="font-weight:600;">Rudra Corporation</p>
-          <p style="color:var(--slate); margin-top:.4rem;">Parent company of Soundwale</p>
-          <p style="margin-top:var(--sp-4);"><a href="tel:+916357152000" style="color:var(--console-2); font-weight:600;">+91 63571 52000</a></p>
-          <p style="margin-top:.4rem;"><a href="mailto:rudrasoundwale@gmail.com" style="color:var(--console-2); font-weight:600;">rudrasoundwale@gmail.com</a></p>
+        <div class="contact-details">
+          <p class="contact-company">Rudra Corporation</p>
+          <p class="contact-muted">Parent company of Soundwale</p>
+          <p><a class="contact-link" href="tel:+916357152000">+91 63571 52000</a></p>
+          <p><a class="contact-link" href="mailto:rudrasoundwale@gmail.com">rudrasoundwale@gmail.com</a></p>
         </div>
       </div>
     </div>

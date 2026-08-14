@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Download Soundwale — Buy, Sell, Hire &amp; List | Soundwale</title>
 <meta name="description" content="Download the Soundwale app to buy and sell sound equipment, hire verified audio professionals, or list your business for free — free for iOS and Android.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="soundwale_logo.png" type="image/png">
 <meta property="og:image" content="soundwale_logo.png">
-<script>!function(){try{document.documentElement.dataset.theme=localStorage.getItem('soundwale-theme')||((matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light')}catch(e){}}()</script>
+<script>!function(){document.documentElement.classList.replace('no-js','js');try{document.documentElement.dataset.theme=localStorage.getItem('soundwale-theme')||((matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light')}catch(e){}}()</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -54,13 +56,13 @@
         <p class="lead" style="margin:var(--sp-3) auto 0;">Switch views below — the app adapts, so do we.</p>
 
         <div class="audience-toggle mt-6" role="tablist" aria-label="Choose your audience">
-          <button role="tab" data-audience="buyer" aria-selected="true">I'm a buyer</button>
-          <button role="tab" data-audience="pro" aria-selected="false" id="professionals">I'm a professional</button>
+          <button id="audience-tab-buyer" role="tab" data-audience="buyer" aria-selected="true" aria-controls="audience-panel-buyer">I'm a buyer</button>
+          <button id="professionals" role="tab" data-audience="pro" aria-selected="false" aria-controls="audience-panel-pro" tabindex="-1">I'm a professional</button>
         </div>
       </div>
 
       <div class="reveal" style="max-width:760px; margin: var(--sp-6) auto 0;">
-        <div data-audience-panel="buyer">
+        <div id="audience-panel-buyer" class="audience-panel" data-audience-panel="buyer" role="tabpanel" aria-labelledby="audience-tab-buyer">
           <div class="compare-col" style="background:var(--ink-2); border-color:var(--line-dark);">
             <h3 style="color:var(--dark-text);">Everything you need to source gear</h3>
             <ul>
@@ -70,7 +72,7 @@
             </ul>
           </div>
         </div>
-        <div data-audience-panel="pro" hidden>
+        <div id="audience-panel-pro" class="audience-panel" data-audience-panel="pro" role="tabpanel" aria-labelledby="professionals" hidden>
           <div class="compare-col" style="background:var(--ink-2); border-color:var(--line-dark);">
             <h3 style="color:var(--dark-text);">Everything you need to get booked</h3>
             <ul>
@@ -143,7 +145,7 @@
             <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.soundwale"><span>▸</span><span>Google Play<small>Get it on</small></span></a>
           </div>
         </div>
-        <div class="qr-block" aria-hidden="true">
+        <div class="qr-block" hidden aria-hidden="true">
           <div class="qr"></div>
           <span>Scan to download</span>
         </div>
